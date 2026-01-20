@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏦 Loan Approval Prediction</h1>
+
+    <form method="POST">
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="number" name="income" placeholder="Monthly Income" required>
+        <input type="number" name="credit" placeholder="Credit Score" required>
+
+        <select name="loans">
+            <option value="0">No Existing Loans</option>
+            <option value="1">Has Existing Loans</option>
+        </select>
+
+        <button type="submit">Check Loan Status</button>
+    </form>
+
+    <h2>{{ prediction }}</h2>
+</div>
+
+</body>
+</html>
