@@ -1,51 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Loan Approval Prediction using Decision Tree</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            margin: 30px;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        code {
-            background: #eee;
-            padding: 4px 6px;
-            border-radius: 4px;
-        }
-        pre {
-            background: #eee;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        table, th, td {
-            border: 1px solid #aaa;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background: #e3e3e3;
-        }
-        .container {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 8px;
-        }
-    </style>
+    
 </head>
 <body>
 
@@ -118,4 +74,91 @@ which mimics human decision-making through simple rules.
     <li><strong>Programming Language:</strong> Python</li>
     <li><strong>Machine Learning:</strong> Scikit-learn</li>
     <li><strong>Web Framework:</strong> Flask</li>
-    <li><
+    <li><strong>Frontend:</strong> HTML, CSS</li>
+    <li><strong>Model:</strong> Decision Tree Classifier</li>
+</ul>
+
+<h2>📁 Project Structure</h2>
+<pre>
+loan_approval_project/
+│
+├── app.py
+├── train_model.py
+├── loan_model.pkl
+├── dataset.csv
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── style.css
+│
+└── README.md
+</pre>
+
+<h2>🔄 Workflow</h2>
+<ol>
+    <li>Load dataset</li>
+    <li>Preprocess data</li>
+    <li>Train Decision Tree model</li>
+    <li>Save trained model</li>
+    <li>Build Flask web app</li>
+    <li>Predict loan status using user input</li>
+</ol>
+
+<h2>▶️ How to Run the Project</h2>
+
+<h3>Install Required Libraries</h3>
+<pre><code>pip install flask pandas scikit-learn</code></pre>
+
+<h3>Train the Model</h3>
+<pre><code>python train_model.py</code></pre>
+
+<h3>Run Flask Application</h3>
+<pre><code>python app.py</code></pre>
+
+<h3>Open Browser</h3>
+<pre><code>http://127.0.0.1:5000/</code></pre>
+
+<h2>🧪 Example Prediction</h2>
+<p><strong>Input:</strong></p>
+<ul>
+    <li>Age: 32</li>
+    <li>Income: ₹40,000</li>
+    <li>Credit Score: 730</li>
+    <li>Existing Loans: No</li>
+</ul>
+
+<p><strong>Output:</strong> Loan Approved ✅</p>
+
+<h2>📈 Model Details</h2>
+<ul>
+    <li>Algorithm: Decision Tree Classifier</li>
+    <li>Learning Type: Supervised Learning</li>
+    <li>Problem Type: Classification</li>
+</ul>
+
+<h2>🎤 Interview Explanation</h2>
+<p>
+“I built a Decision Tree–based Loan Approval Prediction system with a Flask web interface.
+The model evaluates applicant data such as income, credit score, and existing loans to automate loan approval decisions.”
+</p>
+
+<h2>🚀 Future Enhancements</h2>
+<ul>
+    <li>Improve accuracy with more data</li>
+    <li>Add model evaluation metrics</li>
+    <li>Deploy on cloud platforms</li>
+    <li>Upgrade to Random Forest</li>
+</ul>
+
+<h2>👨‍💻 Author</h2>
+<p>
+<strong>Gururaj Gali</strong><br>
+Machine Learning Enthusiast | Python Developer
+</p>
+
+</div>
+
+</body>
+</html>
